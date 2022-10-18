@@ -161,7 +161,7 @@ section.tech {
     color:white ;
     font-size: 100px;
     grid-area: tech;
-    padding: 20vh 0 3vh 0 ;
+    padding: 13vh 0 3vh 0 ;
 }
 /* ============= */
 /* ==Werdegang== */
@@ -214,10 +214,13 @@ div.ausbildung {
     padding-top: 40vh;
 }
 div.erfahrung a, div.erfahrung h4, div.erfahrung ul, div.ausbildung a, div.ausbildung h4, div.ausbildung ul {
-padding-left: 2rem;
+padding-left: 2.5rem;
 }
 div.erfahrung a, div.ausbildung a {
     font-size: 10px;
+}
+div.erfahrung h4, div.ausbildung h4 {
+    font-size: 20px;
 }
 
 
