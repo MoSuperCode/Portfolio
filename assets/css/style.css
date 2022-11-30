@@ -2,17 +2,22 @@
     font-family: Inter;
     src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Inter; 
+    font-family: Inter;
 }
 
-header h1{
+header h1 {
     display: flex;
-    justify-content:flex-start ;
-    padding:1em;
+    justify-content: flex-start;
+    padding: 1em;
     margin-left: 4em;
     margin-top: 5vh;
     color: #4338CA;
@@ -21,20 +26,23 @@ header h1{
     font-weight: 400;
 
 }
-header{
-    width:100%;
+
+header {
+    width: 100%;
     height: 7vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-/*     background-color: rgba(51, 51, 51, 0.27); */
+    /*     background-color: rgba(51, 51, 51, 0.27); */
 }
+
 /* ====================== */
 li a:hover {
     color: white;
     background-color: rgb(0, 0, 0);
     border-radius: 25px;
 }
+
 button:hover {
     color: black;
     background-color: #5b7cdd;
@@ -44,42 +52,49 @@ button:hover {
 header nav {
     margin-top: 7vh;
 }
+
 header nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-header nav ul li{
+
+header nav ul li {
     list-style: none;
-/*     display: inline-block; */
+    /*     display: inline-block; */
 
 }
+
 header nav ul li a {
- text-decoration: none;
- color: #333;
- font-size: 16px;
- padding: 7px 25px;
- font-weight: 400;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 7px 25px;
+    font-weight: 400;
 }
+
 header nav button {
     margin-right: 3vw;
     font-size: 20px;
     border-radius: 25px;
     padding: 7px 40px;
-    background-color:#4338CA ;
+    background-color: #4338CA;
     color: white;
     border: none;
-    
+
 }
-main section.welcome{
+
+main section.welcome {
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     margin-top: 7rem;
 }
-main article{
+
+main article {
     width: 40%;
 }
+
 article div.welcome {
     display: flex;
     align-items: center;
@@ -87,53 +102,63 @@ article div.welcome {
     margin-right: 9rem;
 }
 
-article div.welcome p{
+article div.welcome p {
     font-size: 20px;
     color: #4338CA;
     margin-left: 1.25rem;
 
 }
-main article h2{
-margin-left: 3vw;
-font-size: 50px;
-margin-bottom: 20px;
+
+main article h2 {
+    margin-left: 3vw;
+    font-size: 50px;
+    margin-bottom: 20px;
 }
-main article p.dev{
+
+main article p.dev {
     margin-left: 3vw;
     font-size: 1.2em;
     margin-bottom: 50px;
 }
+
 main article button {
     font-size: 28px;
     border-radius: 30px;
     padding: 15px 47px;
-    background-color:#4338CA ;
+    background-color: #4338CA;
     color: white;
     border: none;
     margin-left: 2.7vw
 }
+
 main section.welcome img.portfolio {
-    box-shadow: #4338CA 40px 40px ;
+    box-shadow: #4338CA 40px 40px;
     height: 667px;
     width: 550px;
 }
+
 section.about {
     display: flex;
     justify-content: center;
-    margin:25vh 0;
+    padding: 30vh 0;
+
 }
+
 section.about h2 {
     font-size: 100px;
-    
+
 }
+
 section.about h2 span {
     text-align: center;
     display: block;
 }
+
 div.about {
     width: 30.5%;
     line-height: 93.02px;
 }
+
 section.about article div {
     height: 6.75rem;
     display: flex;
@@ -141,53 +166,66 @@ section.about article div {
     align-items: center;
     gap: 50px;
 }
+
 section.tech {
     background-color: #4338CA;
     display: grid;
     gap: 50px;
-    grid-template-columns: repeat(7,8%) ;
-    grid-template-rows:1fr 0.75fr 0.5fr 0.5fr;
-    grid-template-areas: 
-    "tech tech tech tech tech tech tech"
-    "html css js react figma vscode wp"
-    "vue angular docker postman express mongodb node"
-    ;
-    height: 99.5vh;
+    grid-template-columns: repeat(4, 10%);
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-template-areas:
+        "tech tech tech tech "
+        "html css js react "
+        "figma vscode wp node";
+    height: auto;
     text-align: center;
     padding-left: 12vw;
+    padding-bottom: 10vh;
 }
+
 .tech h2 {
     text-align: left;
-    color:white ;
+    color: white;
     font-size: 100px;
     grid-area: tech;
-    padding: 13vh 0 3vh 0 ;
+    padding: 7vh 0 3vh 0;
 }
+
 /* ============= */
 /* ==Werdegang== */
 /* ============= */
 section.werde {
     display: flex;
+    width: 100%;
     padding: 20vh 0;
     justify-content: center;
     align-items: flex-start;
     gap: 25px;
 
 }
+
+section.werde li {
+    margin: 5px 0;
+}
+
 section.werde img {
     width: 94px;
     display: inline;
 }
+
 .werde div#werde p {
     color: #4338CA;
     display: inline;
 }
+
 section.werde div {
     display: flex;
     flex-direction: column;
-    justify-content: ;
-    gap:25px;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
 }
+
 section.werde div h3 {
     font-size: 50px;
 }
@@ -195,34 +233,49 @@ section.werde div h3 {
 div#werde {
     display: inline;
 }
+
 div#werde h2 {
     font-size: 100px;
 }
 
-section.werde div article{
+section.werde div article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 547px;
-    height: 191px;
+    width: 90%;
+    height: 210px;
     background-color: #4338CA;
     color: white;
-    border-radius:20px ;
+    border-radius: 20px;
 }
+
 div.ausbildung {
     align-self: flex-end;
     padding-top: 40vh;
 }
-div.erfahrung a, div.erfahrung h4, div.erfahrung ul, div.ausbildung a, div.ausbildung h4, div.ausbildung ul {
-padding-left: 2.5rem;
-}
-div.erfahrung a, div.ausbildung a {
-    font-size: 10px;
-}
-div.erfahrung h4, div.ausbildung h4 {
-    font-size: 20px;
+
+div.erfahrung {
+    margin-left: 2%;
 }
 
+div.erfahrung a,
+div.erfahrung h4,
+div.erfahrung ul,
+div.ausbildung a,
+div.ausbildung h4,
+div.ausbildung ul {
+    padding-left: 2.5rem;
+}
+
+div.erfahrung a,
+div.ausbildung a {
+    font-size: 10px;
+}
+
+div.erfahrung h4,
+div.ausbildung h4 {
+    font-size: 20px;
+}
 
 
 figure {
@@ -232,43 +285,31 @@ figure {
 .html {
     grid-area: html;
 }
+
 .css {
     grid-area: css;
 }
+
 .js {
     grid-area: js;
 }
+
 .react {
     grid-area: react;
 }
+
 .figma {
     grid-area: figma;
 }
+
 .vscode {
     grid-area: vscode;
 }
+
 .wordpress {
     grid-area: wp;
 }
-.vue {
-    grid-area: vue;
-}
-.angular {
-    grid-area: angular;
-}
-.docker {
-    grid-area: docker;
-}
-.postman {
-    grid-area: postman;
-}
-.express {
-    grid-area: express;
-    place-self: end;
-}
-.mongodb {
-    grid-area: mongodb;
-}
+
 .node {
     grid-area: node;
 }
